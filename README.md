@@ -29,6 +29,9 @@ the Fintoc Direct Payments guide**.
 
 ### Sacred Verse — Experimental Linguistic Signature Layer (Linguithium) 
 
+- **Linguithium is the combination of Dilithium (ML-DSA-65) with a 
+linguistic signature (sacred verse)**.
+
 - **The sacred verse serves as a linguistic proof of the transaction's 
 uniqueness. Each payload is associated with a unique verse, 
 retrieved from the WideHoly API**.
@@ -41,6 +44,12 @@ that complements the mathematical proof (ML-DSA-65 signature)**.
   - **The verses are drawn from two dharmic traditions: the Bhagavad Gita 
 (Hinduism) for the PIX payload, and the Tripitaka + Mahayana sutras 
 (Buddhism) for the CLP payload**.
+
+## Dependencies
+
+- @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
+- wideholy — Sacred verses
+
 
 ## Installation
 
@@ -70,7 +79,7 @@ npm install
 
 ```bash
 ## Run the PIX flow
-node moksha-encrypt-pix
+node moksha-encrypt-pix.js
 node moksha-decrypt-pix
 node moksha-sign-pix
 node moksha-gita-verse-pix
