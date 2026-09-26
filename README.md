@@ -92,5 +92,5 @@ node moksha-decrypt-clp.js
 node moksha-sign-clp.js
 node moksha-sutra-verse-clp.js 
 node moksha-sign-verification-clp.js
-node moksha-tampering-test-clp..js
+node moksha-tampering-test-clp.js
 ```
