@@ -62,7 +62,7 @@ Make sure you have installed:
 
 - Git (Git Bash)
 
-  ### 2. Clone the Repository
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/lonelyachemist-arch/Moksha.git
