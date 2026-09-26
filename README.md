@@ -78,7 +78,7 @@ npm install
  ### 4. Run the POC
 
 ```bash
-## Run the PIX flow.js
+## Run the PIX flow
 node moksha-encrypt-pix.js
 node moksha-decrypt-pix.js
 node moksha-sign-pix.js
