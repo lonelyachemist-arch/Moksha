@@ -27,7 +27,7 @@ the same format used by the `pix-payload` npm package. The placeholder numbers f
 payments, using the recipient_account object defined by 
 the Fintoc Direct Payments guide**.
 
-## Sacred Verse — Experimental Linguistic Signature Layer (Linguithium) 
+## Linguithium - Linguistic Signature Layer (Experimental)   
 
 - **Linguithium is the combination of Dilithium (ML-DSA-65) with a 
 linguistic signature (sacred verse)**.
