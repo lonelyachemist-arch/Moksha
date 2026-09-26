@@ -78,19 +78,19 @@ npm install
  ### 4. Run the POC
 
 ```bash
-## Run the PIX flow
+## Run the PIX flow.js
 node moksha-encrypt-pix.js
-node moksha-decrypt-pix
-node moksha-sign-pix
-node moksha-gita-verse-pix
-node moksha-sign-verification-pix
-node moksha-tampering-test-pix
+node moksha-decrypt-pix.js
+node moksha-sign-pix.js
+node moksha-gita-verse-pix.js
+node moksha-sign-verification-pix.js
+node moksha-tampering-test-pix.js
 
 ## Run the CLP flow
-node moksha-encrypt-clp
-node moksha-decrypt-clp
-node moksha-sign-clp
-node moksha-sutra-verse-clp 
-node moksha-sign-verification-clp
-node moksha-tampering-test-clp.
+node moksha-encrypt-clp.js
+node moksha-decrypt-clp.js
+node moksha-sign-clp.js
+node moksha-sutra-verse-clp.js 
+node moksha-sign-verification-clp.js
+node moksha-tampering-test-clp..js
 ```
