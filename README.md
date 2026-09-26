@@ -1,2 +1,87 @@
 # Moksha
-A proof-of-concept for the application of post-quantum cryptography in PIX and CLP transactions, combining ML-KEM and ML-DSA with sacred verses as a linguistic signature layer.
+**Moksha** ("Liberation") is a proof-of-concept for post-quantum cryptography in PIX and CLP transactions, combining ML-KEM-768 and ML-DSA-65 with sacred dharmic verses as an experimental linguistic signature layer. 
+
+> "ML-KEM encrypts, ML-DSA signs, verses prove."
+
+## Architecture 
+Moksha encrypts and signs two dummy payloads for PIX and CLP with a post-quantum traditional hybrid scheme built with PQC-SDK. WideHoly provides the dharmic religious verses for each payload. 
+
+The architecture is built on three layers:
+
+## 1.  Post-Quantum Traditional — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
+
+- **The post-quantum ML-KEM-768 (Kyber) and the classical X25519 algorithms combine into an X-Wing hybrid scheme**.
+
+- **The ML-DSA-65 (Dilithium) algorithm signs both payloads. Each payload has its own key pair and its own signature. The signature is 3309 bytes and detects any tampering**.
+
+ ## 2. Dummy Payloads 
+ 
+### PIX Payload
+
+- **The PIX payload follows the Brazilian Central Bank specification, 
+the same format used by the `pix-payload` npm package. The placeholder numbers featured are symbolic dates**.
+
+### CLP Payload
+
+- **The CLP payload follows the Fintoc (Fintech) API specification for CLP 
+payments, using the recipient_account object defined by 
+the Fintoc Direct Payments guide**.
+
+### Sacred Verse — Experimental Linguistic Signature Layer (Linguithium) 
+
+- **The sacred verse serves as a linguistic proof of the transaction's 
+uniqueness. Each payload is associated with a unique verse, 
+retrieved from the WideHoly API**.
+
+- **The verse is not encrypted. It is a cultural and linguistic layer 
+that complements the mathematical proof (ML-DSA-65 signature)**.
+
+- **Together, they form a dual-proof system that validates the transaction only if both proofs are present and unaltered**.
+
+  - **The verses are drawn from two dharmic traditions: the Bhagavad Gita 
+(Hinduism) for the PIX payload, and the Tripitaka + Mahayana sutras 
+(Buddhism) for the CLP payload**.
+
+## Installation
+
+### 1. Prerequisites
+Make sure you have installed:
+
+- Node.js 20+ (LTS version recommended) 
+
+- npm (comes with Node.js)
+
+- Git (Git Bash)
+
+  ### 2. Clone the Repository
+
+```bash
+https://github.com/lonelyachemist-arch/Moksha.git
+cd Moksha
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+ ### 4. Run the POC
+
+```bash
+## Run the PIX flow
+node moksha-encrypt-pix
+node moksha-decrypt-pix
+node moksha-sign-pix
+node moksha-gita-verse-pix
+node moksha-sign-verification-pix
+node moksha-tampering-test-pix
+
+## Run the CLP flow
+node moksha-encrypt-clp
+node moksha-decrypt-clp
+node moksha-sign-clp
+node moksha-sutra-verse-clp 
+node moksha-sign-verification-clp
+node moksha-tampering-test-clp.
+```
