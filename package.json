@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@pqc-sdk/core": "^0.9.1",
+    "devnagri-numerals": "^1.0.1",
+    "widegita": "^0.1.1",
+    "wideholy": "^0.1.1"
+  }
+}

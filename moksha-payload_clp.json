@@ -1,0 +1,11 @@
+{
+  "counterparty": {
+    "holder_id": "21459179-0",
+    "holder_name": "Felipe Molina",
+    "account_number": "10081987",
+     "type": "sight_account",
+    "institution_id": "cl_banco_santander"
+  },
+  "amount": 50000,
+  "currency": "CLP"
+}
