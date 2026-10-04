@@ -13,43 +13,44 @@ O Moksha criptografa e assina dois payloads fictícios para PIX e CLP com um esq
 
 A arquitetura é construída em três camadas:
 
-## 1. Pós-Quântico Tradicional — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
+## 1. Criptografia Híbrida — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
 
-- **O ML-KEM-768 (Kyber) pós-quântico e o X25519 clássico se combinam em um esquema híbrido X-Wing.**
 
-- **O algoritmo ML-DSA-65 (Dilithium) assina ambos os payloads. Cada payload tem seu próprio par de chaves e sua própria assinatura. A assinatura tem 3309 bytes e detecta qualquer adulteração.**
+- Os algoritmos **ML-KEM-768 (Kyber)** pós-quântico e o **X25519** clássico se combinam em um **esquema híbrido X-Wing**.
+
+- **O algoritmo pós-quântico **ML-DSA-65 (Dilithium)** assina ambos os payloads. Cada payload tem seu próprio par de chaves e sua própria assinatura. A assinatura tem 3309 bytes e detecta qualquer adulteração.
 
 ## 2. Payloads Fictícios
 
 ### Payload PIX
 
-- **O payload PIX segue a especificação do Banco Central do Brasil, o mesmo formato usado pelo pacote npm `pix-payload`. Os números representam datas simbólicas.**
+- **O payload PIX**  segue a especificação do Banco Central do Brasil, o mesmo formato usado pelo pacote npm `pix-payload`. **Os números representam datas simbólicas**.
 
 ### Payload CLP
 
-- **O payload CLP segue a especificação da API da Fintoc (Fintech) para pagamentos em CLP, usando o objeto `recipient_account` definido no guia Fintoc Direct Payments.**
+- **O payload CLP** segue a especificação da API da Fintoc para pagamentos em CLP, usando o objeto `recipient_account` definido no guia Fintoc Direct Payments.
 
 ## Linguithium — Camada de Assinatura Linguística (Experimental)
 
-- **Linguithium é a combinação do Dilithium (ML-DSA-65) com uma assinatura linguística (verso sagrado).**
+- **Linguithium**  é a combinação do **Dilithium (ML-DSA-65)**  com uma assinatura linguística (verso sagrado).**
 
-- **O verso sagrado serve como prova linguística da unicidade da transação. Cada payload é associado a um verso único, obtido da API WideHoly.**
+- **O verso sagrado**  serve como prova linguística da unicidade da transação. Cada payload é associado a um verso único, obtido da API WideHoly.
 
-- **O verso não é cifrado. É uma camada cultural e linguística que complementa a prova matemática (assinatura ML-DSA-65).**
+- **O verso **não é cifrado** . É uma camada cultural e linguística que complementa a prova matemática (assinatura ML-DSA-65).
 
-- **Juntos, formam um sistema de dupla prova que valida a transação apenas se ambas as provas estiverem presentes e inalteradas.**
+- **Juntos, formam um **sistema de dupla prova** que valida a transação apenas se ambas as provas estiverem presentes e inalteradas.
 
-- **Os versos são gerados aleatoriamente a partir de duas tradições dhármicas: o Bhagavad Gita (Hinduísmo) para o payload PIX, e o Tripitaka + sutras Mahayana (Budismo) para o payload CLP.**
+- **Os versos **são gerados aleatoriamente**  a partir de duas tradições dhármicas: o **Bhagavad Gita** (Hinduísmo) para o payload PIX, e o **Tripitaka + sutras Mahayana** (Budismo) para o payload CLP.
 
-- **Tradução: Os versos placeholders são traduzidos para idiomas locais usando o open-google-translator.**
+- **Tradução**: Os versos placeholders são traduzidos para idiomas locais usando o open-google-translator.
 
-- **Produção: O uso em produção exige traduções curadas de termos em sânscrito e páli, provenientes de fontes publicadas, para garantir precisão e auditabilidade.**
+- **Produção**: O uso em produção exige traduções curadas de termos em sânscrito e páli, provenientes de fontes publicadas, para garantir precisão e auditabilidade.
 
 ## Dependências
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Versos sagrados
-- open-google-translator — Tradução de versos para idiomas locais (Português/Espanhol)
+- open-google-translator — Tradução dos versos placeholders para idiomas locais (Português/Espanhol)
 
 ## Instalação
 
