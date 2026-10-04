@@ -12,37 +12,37 @@ Moksha cifra y firma dos payloads ficticios para PIX y CLP con un esquema híbri
 
 La arquitectura se construye en tres capas:
 
-## 1. Post-Cuántico Tradicional — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
+## 1. Criptografía Híbrida — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
 
-- **El ML-KEM-768 (Kyber) post-cuántico y el X25519 clásico se combinan en un esquema híbrido X-Wing.**
+- Los algoritmos **ML-KEM-768 (Kyber)** post-cuántico y el **X25519** clásico se combinan en un **esquema híbrido X-Wing.**
 
-- **El algoritmo ML-DSA-65 (Dilithium) firma ambos payloads. Cada payload tiene su propio par de claves y su propia firma. La firma tiene 3309 bytes y detecta cualquier manipulación.**
+- El algoritmo **ML-DSA-65 (Dilithium)**  firma ambos payloads. Cada payload tiene su propio par de claves y su propia firma. La firma tiene **3309 bytes** y detecta cualquier manipulación.
 
 ## 2. Payloads Ficticios
 
 ### Payload PIX
 
-- **El payload PIX sigue la especificación del Banco Central de Brasil, el mismo formato utilizado por el paquete npm `pix-payload`. Los números representan fechas simbólicas.**
+- El **payload PIX** sigue la especificación del Banco Central de Brasil, el mismo formato utilizado por el paquete npm `pix-payload`. **Los números representan fechas simbólicas.**
 
 ### Payload CLP
 
-- **El payload CLP sigue la especificación de la API de Fintoc (Fintech) para pagos en CLP, utilizando el objeto `recipient_account` definido en la guía Fintoc Direct Payments.**
+- El **payload CLP** sigue la especificación de la API de Fintoc para pagos en CLP, utilizando el objeto `recipient_account` definido en la guía Fintoc Direct Payments.**
 
 ## Linguithium — Capa de Firma Lingüística (Experimental)
 
-- **Linguithium es la combinación de Dilithium (ML-DSA-65) con una firma lingüística (verso sagrado).**
+- **Linguithium** es la combinación de Dilithium (ML-DSA-65) con una firma lingüística (verso sagrado).
 
-- **El verso sagrado sirve como prueba lingüística de la unicidad de la transacción. Cada payload se asocia con un verso único, obtenido de la API WideHoly.**
+- El **verso sagrado** sirve como prueba lingüística de la unicidad de la transacción. Cada payload se asocia con un verso único, obtenido de la API WideHoly.
 
-- **El verso no está cifrado. Es una capa cultural y lingüística que complementa la prueba matemática (firma ML-DSA-65).**
+- El verso **no está cifrado**. Es una capa cultural y lingüística que complementa la prueba matemática (firma ML-DSA-65).**
 
-- **Juntos, forman un sistema de doble prueba que valida la transacción solo si ambas pruebas están presentes e inalteradas.**
+- Juntos, forman un **sistema de doble prueba** que valida la transacción solo si ambas pruebas están presentes e inalteradas.
 
-- **Los versos se generan aleatoriamente a partir de dos tradiciones dhármica: el Bhagavad Gita (Hinduismo) para el payload PIX, y el Tripitaka + sutras Mahayana (Budismo) para el payload CLP.**
+- Los versos se **generan aleatoriamente** a partir de dos tradiciones dhármica: el **Bhagavad Gita** (Hinduismo) para el payload PIX, y el **Tripitaka + sutras Mahayana** (Budismo) para el payload CLP.
 
-- **Traducción: Los versos placeholders se traducen a idiomas locales usando open-google-translator.**
+- **Traducción**: Los versos placeholders se traducen a idiomas locales usando open-google-translator.
 
-- **Producción: El uso en producción requiere traducciones curadas de términos en sánscrito y pali, provenientes de fuentes publicadas, para garantizar precisión y auditabilidad.**
+- **Producción**: El uso en producción requiere traducciones curadas de términos en sánscrito y pali, provenientes de fuentes publicadas, para garantizar precisión y auditabilidad.
 
 ## Dependencias
 
