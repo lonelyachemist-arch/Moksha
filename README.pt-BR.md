@@ -13,12 +13,14 @@ O Moksha criptografa e assina dois payloads fictícios para PIX e CLP com um esq
 
 A arquitetura é construída em três camadas:
 
+
 ## 1. Criptografia Híbrida — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
 
 
 - Os algoritmos **ML-KEM-768 (Kyber)** pós-quântico e o **X25519** clássico se combinam em um **esquema híbrido X-Wing**.
 
 - **O algoritmo pós-quântico **ML-DSA-65 (Dilithium)** assina ambos os payloads. Cada payload tem seu próprio par de chaves e sua própria assinatura. A assinatura tem 3309 bytes e detecta qualquer adulteração.
+
 
 ## 2. Payloads Fictícios
 
@@ -29,6 +31,7 @@ A arquitetura é construída em três camadas:
 ### Payload CLP
 
 - **O payload CLP** segue a especificação da API da Fintoc para pagamentos em CLP, usando o objeto `recipient_account` definido no guia Fintoc Direct Payments.
+
 
 ## Linguithium — Camada de Assinatura Linguística (Experimental)
 
@@ -46,11 +49,13 @@ A arquitetura é construída em três camadas:
 
 - **Produção**: O uso em produção exige traduções curadas de termos em sânscrito e páli, provenientes de fontes publicadas, para garantir precisão e auditabilidade.
 
+
 ## Dependências
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Versos sagrados
 - open-google-translator — Tradução dos versos placeholders para idiomas locais (Português/Espanhol)
+
 
 ## Instalação
 
@@ -76,6 +81,7 @@ cd Moksha
 ```bash
 npm install
 ```
+
 
 ### 4. Executar a POC
 
