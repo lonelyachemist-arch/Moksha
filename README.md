@@ -45,10 +45,20 @@ that complements the mathematical proof (ML-DSA-65 signature)**.
 (Hinduism) for the PIX payload, and the Tripitaka + Mahayana sutras 
 (Buddhism) for the CLP payload**.
 
+### Translation
+
+- **Verses are translated to local languages using open-google-translator**.
+
+- **Production use requires curated translations of
+Sanskrit and Pali terms from published sources to ensure accuracy and
+auditability**.
+
+
 ## Dependencies
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Sacred verses
+- open-google-translator — Verse translation to local languages (Portuguese/Spanish) 
 
 
 ## Installation
@@ -77,20 +87,29 @@ npm install
 
  ### 4. Run the POC
 
+- **The PIX flow runs in Portuguese (pt-BR) and the CLP flow runs in Spanish
+(es-ES/LATAM), ensuring accessibility for each payment rail**.
+
+
 ```bash
 ## Run the PIX flow
-node moksha-encrypt-pix.js
-node moksha-decrypt-pix.js
-node moksha-sign-pix.js
-node moksha-gita-verse-pix.js
-node moksha-sign-verification-pix.js
-node moksha-tampering-test-pix.js
+
+node moksha-criptografar-pix.js
+node moksha-descriptografar-pix.js
+node moksha-assinar-pix.js
+node moksha-verso-gita-pix.js
+node moksha-verso-gita-traducao-pt.cjs
+node moksha-verificar-pix.js
+node moksha-teste-adulteracao-pix.js
+
 
 ## Run the CLP flow
-node moksha-encrypt-clp.js
-node moksha-decrypt-clp.js
-node moksha-sign-clp.js
-node moksha-sutra-verse-clp.js 
-node moksha-sign-verification-clp.js
-node moksha-tampering-test-clp.js
+
+node moksha-cifrar-clp.js
+node moksha-descifrar-clp.js
+node moksha-firmar-clp.js
+node moksha-verso-sutra-clp.js 
+node moksha-verso-sutra-traduccion-es.cjs
+node moksha-verificar-clp.js
+node moksha-prueba-adulteracion-clp.js
 ```
