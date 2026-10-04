@@ -20,7 +20,7 @@ The architecture is built on three layers:
 ### PIX Payload
 
 - The **PIX payload** follows the Brazilian Central Bank specification, 
-the same format used by the `pix-payload` npm package. **The placeholder numbers featured are symbolic dates**.
+the same format used by the `pix-payload` npm package. The placeholder numbers featured are symbolic dates.
 
 ### CLP Payload
 
