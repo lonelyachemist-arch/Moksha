@@ -32,7 +32,7 @@ A arquitetura é construída em três camadas:
 
 ## Linguithium — Camada de Assinatura Linguística (Experimental)
 
-- **Linguithium**  é a combinação do **Dilithium (ML-DSA-65)**  com uma assinatura linguística (verso sagrado).**
+- **Linguithium**  é a combinação do **Dilithium (ML-DSA-65)**  com uma assinatura linguística (verso sagrado).
 
 - **O verso sagrado**  serve como prova linguística da unicidade da transação. Cada payload é associado a um verso único, obtido da API WideHoly.
 
