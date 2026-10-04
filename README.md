@@ -33,7 +33,7 @@ the Fintoc Direct Payments guide**.
 - **Linguithium is the combination of Dilithium (ML-DSA-65) with a 
 linguistic signature (sacred verse)**.
 
-- **The sacred verse serves as a linguistic proof of the transaction's 
+- **The random verse serves as a linguistic proof of the transaction's 
 uniqueness. Each payload is associated with a unique verse, 
 retrieved from the WideHoly API**.
 
@@ -42,11 +42,11 @@ that complements the mathematical proof (ML-DSA-65 signature)**.
 
 - **Together, they form a dual-proof system that validates the transaction only if both proofs are present and unaltered**.
 
-  - **The verses are drawn from two dharmic traditions: the Bhagavad Gita 
+  - **The verses are randomly generated and drawn from two dharmic traditions: the Bhagavad Gita 
 (Hinduism) for the PIX payload, and the Tripitaka + Mahayana sutras 
 (Buddhism) for the CLP payload**.
 
-- **Verses are translated to local languages using open-google-translator**.
+- **Placeholder verses are translated to local languages using open-google-translator**.
 
 - **Production use requires curated translations of
 Sanskrit and Pali terms from published sources to ensure accuracy and
