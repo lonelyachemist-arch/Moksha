@@ -19,7 +19,7 @@ A arquitetura é construída em três camadas:
 
 - Os algoritmos **ML-KEM-768 (Kyber)** pós-quântico e o **X25519** clássico se combinam em um **esquema híbrido X-Wing**.
 
-- **O algoritmo pós-quântico **ML-DSA-65 (Dilithium)** assina ambos os payloads. Cada payload tem seu próprio par de chaves e sua própria assinatura. A assinatura tem 3309 bytes e detecta qualquer adulteração.
+- O algoritmo **ML-DSA-65 (Dilithium)** assina ambos os payloads. Cada payload tem seu próprio par de chaves e sua própria assinatura. A assinatura tem 3309 bytes e detecta qualquer adulteração.
 
 
 ## 2. Payloads Fictícios
