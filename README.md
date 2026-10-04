@@ -1,4 +1,4 @@
-**Idiomas:** [English](README.md) | [Português](README.pt-BR.md) | [Español](README.es-ES.md)
+**Idiomas:** [English](README.md) | [Português](README.pt-BR.md) | [Español](README.es-CL.md)
 # Moksha
 **Moksha** ("Liberation") is a proof-of-concept for post-quantum cryptography in PIX and CLP transactions, combining ML-KEM-768 and ML-DSA-65 with sacred dharmic verses as a linguistic signature layer. 
 
