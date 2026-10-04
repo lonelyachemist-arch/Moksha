@@ -39,9 +39,9 @@ A arquitetura é construída em três camadas:
 
 - **Juntos, formam um sistema de dupla prova que valida a transação apenas se ambas as provas estiverem presentes e inalteradas.**
 
-- **Os versos são extraídos de duas tradições dhármicas: o Bhagavad Gita (Hinduísmo) para o payload PIX, e o Tripitaka + sutras Mahayana (Budismo) para o payload CLP.**
+- **Os versos são gerados aleatoriamente a partir de duas tradições dhármicas: o Bhagavad Gita (Hinduísmo) para o payload PIX, e o Tripitaka + sutras Mahayana (Budismo) para o payload CLP.**
 
-- **Tradução: Os versos são traduzidos para idiomas locais usando o open-google-translator.**
+- **Tradução: Os versos placeholders são traduzidos para idiomas locais usando o open-google-translator.**
 
 - **Produção: O uso em produção exige traduções curadas de termos em sânscrito e páli, provenientes de fontes publicadas, para garantir precisão e auditabilidade.**
 
