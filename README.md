@@ -9,55 +9,55 @@ Moksha encrypts and signs two dummy payloads for PIX and CLP with a post-quantum
 
 The architecture is built on three layers:
 
-## 1.  Post-Quantum Traditional — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
+## 1.  Hybrid Cryptography — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
 
-- **The post-quantum ML-KEM-768 (Kyber) and the classical X25519 algorithms combine into an X-Wing hybrid scheme**.
+- **The post-quantum ML-KEM-768 (Kyber)** and the classical **X25519** algorithms combine into an **X-Wing hybrid scheme**.
 
-- **The ML-DSA-65 (Dilithium) algorithm signs both payloads. Each payload has its own key pair and its own signature. The signature is 3309 bytes and detects any tampering**.
-
+- The - **The ML-DSA-65 (Dilithium)** algorithm signs both payloads. Each payload has its own key pair and its own signature. The signature is **3309 bytes** and detects any tampering.
+ 
  ## 2. Dummy Payloads 
  
 ### PIX Payload
 
-- **The PIX payload follows the Brazilian Central Bank specification, 
-the same format used by the `pix-payload` npm package. The placeholder numbers featured are symbolic dates**.
+- **The **PIX payload** follows the Brazilian Central Bank specification, 
+the same format used by the `pix-payload` npm package. **The placeholder numbers featured are symbolic dates**.
 
 ### CLP Payload
 
-- **The CLP payload follows the Fintoc (Fintech) API specification for CLP 
+- **The CLP payload** follows the Fintoc API specification for CLP 
 payments, using the recipient_account object defined by 
-the Fintoc Direct Payments guide**.
+the Fintoc Direct Payments guide.
 
 ## Linguithium - Linguistic Signature Layer (Experimental)   
 
-- **Linguithium is the combination of Dilithium (ML-DSA-65) with a 
+- **Linguithium** is the combination of Dilithium (ML-DSA-65) with a 
 linguistic signature (sacred verse)**.
 
-- **The random verse serves as a linguistic proof of the transaction's 
-uniqueness. Each payload is associated with a unique verse, 
-retrieved from the WideHoly API**.
+- The random verse **serves as a linguistic proof of the transaction's 
+uniqueness**. Each payload is associated with a unique verse, 
+retrieved from the WideHoly API.
 
-- **The verse is not encrypted. It is a cultural and linguistic layer 
-that complements the mathematical proof (ML-DSA-65 signature)**.
+- **The verse is **not encrypted**. It is a cultural and linguistic layer 
+that complements the mathematical proof (ML-DSA-65 signature).
 
-- **Together, they form a dual-proof system that validates the transaction only if both proofs are present and unaltered**.
+- **Together, they form a **dual-proof system** that validates the transaction only if both proofs are present and unaltered.
 
-  - **The verses are randomly generated and drawn from two dharmic traditions: the Bhagavad Gita 
-(Hinduism) for the PIX payload, and the Tripitaka + Mahayana sutras 
-(Buddhism) for the CLP payload**.
+  - **The verses are randomly generated** and drawn from two dharmic traditions: the **Bhagavad Gita**
+(Hinduism) for the PIX payload, and the **Tripitaka + Mahayana sutras**
+(Buddhism) for the CLP payload.
 
-- **Placeholder verses are translated to local languages using open-google-translator**.
+- **Translation:** Placeholder verses are translated to local languages using open-google-translator.
 
-- **Production use requires curated translations of
+- **Production:** Production use requires curated translations of
 Sanskrit and Pali terms from published sources to ensure accuracy and
-auditability**.
+auditability.
 
 
 ## Dependencies
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Sacred verses
-- open-google-translator — Verse translation to local languages (PT/ES) 
+- open-google-translator — Placeholder verse translation to local languages (PT/ES) 
 
 
 ## Installation
