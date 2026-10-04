@@ -87,7 +87,7 @@ npm install
  ### 4. Run the POC
 
 The PIX flow runs in Portuguese (pt-BR) and the CLP flow runs in Spanish
-(es-ES/LATAM), ensuring accessibility for each payment rail.
+(es-ES/CL), ensuring accessibility for each payment rail.
 
 
 ```bash
