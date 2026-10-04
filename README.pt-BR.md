@@ -78,7 +78,7 @@ npm install
 
 ### 4. Executar a POC
 
-O fluxo PIX roda em português (pt-BR) e o fluxo CLP roda em espanhol (es-ES/LATAM), garantindo acessibilidade para cada trilho de pagamento.
+O fluxo PIX roda em português (pt-BR) e o fluxo CLP roda em espanhol (es-ES/CL), garantindo acessibilidade para cada trilho de pagamento.
 
 ```bash
 ## Executando o fluxo PIX
