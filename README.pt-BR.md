@@ -33,7 +33,7 @@ A arquitetura é construída em três camadas:
 - **O payload CLP** segue a especificação da API da Fintoc para pagamentos em CLP, usando o objeto `recipient_account` definido no guia Fintoc Direct Payments.
 
 
-## Linguithium — Camada de Assinatura Linguística (Experimental)
+## 3. Linguithium — Camada de Assinatura Linguística (Experimental)
 
 - **Linguithium**  é a combinação do **Dilithium (ML-DSA-65)**  com uma assinatura linguística (verso sagrado).
 
