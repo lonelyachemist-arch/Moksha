@@ -39,11 +39,11 @@ A arquitetura é construída em três camadas:
 
 - **O verso sagrado**  serve como prova linguística da unicidade da transação. Cada payload é associado a um verso único, obtido da API WideHoly.
 
-- **O verso **não é cifrado** . É uma camada cultural e linguística que complementa a prova matemática (assinatura ML-DSA-65).
+- O verso **não é cifrado** . É uma camada cultural e linguística que complementa a prova matemática (assinatura ML-DSA-65).
 
-- **Juntos, formam um **sistema de dupla prova** que valida a transação apenas se ambas as provas estiverem presentes e inalteradas.
+- Juntos, formam um **sistema de dupla prova** que valida a transação apenas se ambas as provas estiverem presentes e inalteradas.
 
-- **Os versos **são gerados aleatoriamente**  a partir de duas tradições dhármicas: o **Bhagavad Gita** (Hinduísmo) para o payload PIX, e o **Tripitaka + sutras Mahayana** (Budismo) para o payload CLP.
+- Os versos **são gerados aleatoriamente**  a partir de duas tradições dhármicas: o **Bhagavad Gita** (Hinduísmo) para o payload PIX, e o **Tripitaka + sutras Mahayana** (Budismo) para o payload CLP.
 
 - **Tradução**: Os versos placeholders são traduzidos para idiomas locais usando o open-google-translator.
 
