@@ -28,7 +28,7 @@ La arquitectura se construye en tres capas:
 
 - El **payload CLP** sigue la especificación de la API de Fintoc para pagos en CLP, utilizando el objeto `recipient_account` definido en la guía Fintoc Direct Payments.
 
-## Linguithium — Capa de Firma Lingüística (Experimental)
+## 3. Linguithium — Capa de Firma Lingüística (Experimental)
 
 - **Linguithium** es la combinación de Dilithium (ML-DSA-65) con una firma lingüística (verso sagrado).
 
