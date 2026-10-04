@@ -11,9 +11,9 @@ The architecture is built on three layers:
 
 ## 1.  Hybrid Cryptography — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
 
-- **The post-quantum ML-KEM-768 (Kyber)** and the classical **X25519** algorithms combine into an **X-Wing hybrid scheme**.
+- The post-quantum **ML-KEM-768 (Kyber)** and the classical **X25519** algorithms combine into an **X-Wing hybrid scheme**.
 
-- The - **The ML-DSA-65 (Dilithium)** algorithm signs both payloads. Each payload has its own key pair and its own signature. The signature is **3309 bytes** and detects any tampering.
+- The **ML-DSA-65 (Dilithium)** algorithm signs both payloads. Each payload has its own key pair and its own signature. The signature is **3309 bytes** and detects any tampering.
  
  ## 2. Dummy Payloads 
  
