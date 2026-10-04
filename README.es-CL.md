@@ -14,7 +14,7 @@ La arquitectura se construye en tres capas:
 
 ## 1. Criptografía Híbrida — ML-KEM-768 + X25519 (X-Wing) + ML-DSA-65 (Dilithium)
 
-- Los algoritmos **ML-KEM-768 (Kyber)** post-cuántico y el **X25519** clásico se combinan en un **esquema híbrido X-Wing.**
+- Los algoritmos **ML-KEM-768 (Kyber)** post-cuántico y el **X25519** clásico se combinan en un **esquema híbrido X-Wing**.
 
 - El algoritmo **ML-DSA-65 (Dilithium)**  firma ambos payloads. Cada payload tiene su propio par de claves y su propia firma. La firma tiene **3309 bytes** y detecta cualquier manipulación.
 
@@ -22,11 +22,11 @@ La arquitectura se construye en tres capas:
 
 ### Payload PIX
 
-- El **payload PIX** sigue la especificación del Banco Central de Brasil, el mismo formato utilizado por el paquete npm `pix-payload`. **Los números representan fechas simbólicas.**
+- El **payload PIX** sigue la especificación del Banco Central de Brasil, el mismo formato utilizado por el paquete npm `pix-payload`. Los números representan fechas simbólicas.
 
 ### Payload CLP
 
-- El **payload CLP** sigue la especificación de la API de Fintoc para pagos en CLP, utilizando el objeto `recipient_account` definido en la guía Fintoc Direct Payments.**
+- El **payload CLP** sigue la especificación de la API de Fintoc para pagos en CLP, utilizando el objeto `recipient_account` definido en la guía Fintoc Direct Payments.
 
 ## Linguithium — Capa de Firma Lingüística (Experimental)
 
@@ -34,11 +34,11 @@ La arquitectura se construye en tres capas:
 
 - El **verso sagrado** sirve como prueba lingüística de la unicidad de la transacción. Cada payload se asocia con un verso único, obtenido de la API WideHoly.
 
-- El verso **no está cifrado**. Es una capa cultural y lingüística que complementa la prueba matemática (firma ML-DSA-65).**
+- El verso **no está cifrado**. Es una capa cultural y lingüística que complementa la prueba matemática (firma ML-DSA-65).
 
 - Juntos, forman un **sistema de doble prueba** que valida la transacción solo si ambas pruebas están presentes e inalteradas.
 
-- Los versos se **generan aleatoriamente** a partir de dos tradiciones dhármica: el **Bhagavad Gita** (Hinduismo) para el payload PIX, y el **Tripitaka + sutras Mahayana** (Budismo) para el payload CLP.
+- Los versos se **generan aleatoriamente** a partir de dos tradiciones dhármicas: el **Bhagavad Gita** (Hinduismo) para el payload PIX, y el **Tripitaka + sutras Mahayana** (Budismo) para el payload CLP.
 
 - **Traducción**: Los versos placeholders se traducen a idiomas locales usando open-google-translator.
 
@@ -76,7 +76,9 @@ npm install
 ```
 
 ### 4. Ejecutar la POC
+
 El flujo PIX se ejecuta en portugués (pt-BR) y el flujo CLP se ejecuta en español (es-CL), garantizando accesibilidad para cada riel de pago.
+
 
 ```bash
 ## Ejecutando el flujo PIX
