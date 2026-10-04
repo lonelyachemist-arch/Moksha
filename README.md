@@ -56,7 +56,7 @@ auditability**.
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Sacred verses
-- open-google-translator — Verse translation to local languages (Portuguese/Spanish) 
+- open-google-translator — Verse translation to local languages (PT/ES) 
 
 
 ## Installation
