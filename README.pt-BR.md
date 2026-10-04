@@ -26,7 +26,7 @@ A arquitetura é construída em três camadas:
 
 ### Payload PIX
 
-- **O payload PIX**  segue a especificação do Banco Central do Brasil, o mesmo formato usado pelo pacote npm `pix-payload`. **Os números representam datas simbólicas**.
+- **O payload PIX**  segue a especificação do Banco Central do Brasil, o mesmo formato usado pelo pacote npm `pix-payload`. Os números representam datas simbólicas.
 
 ### Payload CLP
 
