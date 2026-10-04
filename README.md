@@ -45,8 +45,6 @@ that complements the mathematical proof (ML-DSA-65 signature)**.
 (Hinduism) for the PIX payload, and the Tripitaka + Mahayana sutras 
 (Buddhism) for the CLP payload**.
 
-### Translation
-
 - **Verses are translated to local languages using open-google-translator**.
 
 - **Production use requires curated translations of
@@ -87,8 +85,8 @@ npm install
 
  ### 4. Run the POC
 
-- **The PIX flow runs in Portuguese (pt-BR) and the CLP flow runs in Spanish
-(es-ES/LATAM), ensuring accessibility for each payment rail**.
+The PIX flow runs in Portuguese (pt-BR) and the CLP flow runs in Spanish
+(es-ES/LATAM), ensuring accessibility for each payment rail.
 
 
 ```bash
