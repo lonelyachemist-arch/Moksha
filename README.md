@@ -42,7 +42,7 @@ that complements the mathematical proof (ML-DSA-65 signature).
 
 - **Together, they form a **dual-proof system** that validates the transaction only if both proofs are present and unaltered.
 
-  - **The verses are randomly generated** and drawn from two dharmic traditions: the **Bhagavad Gita**
+  - **The verses are randomly generated** and drawn from sacred texts of two dharmic traditions: the **Bhagavad Gita**
 (Hinduism) for the PIX payload, and the **Tripitaka + Mahayana sutras**
 (Buddhism) for the CLP payload.
 
