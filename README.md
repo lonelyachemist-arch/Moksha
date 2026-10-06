@@ -57,7 +57,7 @@ auditability.
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Sacred verses
-- open-google-translator — Verses translations to local languages (PT/ES) 
+- open-google-translator — Verses translation to local languages (PT/ES) 
 
 
 ## Installation
@@ -97,7 +97,6 @@ node moksha-criptografar-pix.js
 node moksha-descriptografar-pix.js
 node moksha-assinar-pix.js
 node moksha-verso-gita-pix.js
-node moksha-verso-gita-traducao-pt.cjs
 node moksha-verificar-pix.js
 node moksha-teste-adulteracao-pix.js
 
@@ -108,7 +107,6 @@ node moksha-cifrar-clp.js
 node moksha-descifrar-clp.js
 node moksha-firmar-clp.js
 node moksha-verso-sutra-clp.js 
-node moksha-verso-sutra-traduccion-es.cjs
 node moksha-verificar-clp.js
 node moksha-prueba-adulteracion-clp.js
 ```
