@@ -45,7 +45,7 @@ A arquitetura é construída em três camadas:
 
 - Os versos **são gerados aleatoriamente** a partir de textos sagrados de duas tradições dhármicas: o **Bhagavad Gita** (Hinduísmo) para o payload PIX, e o **Tripitaka + sutras Mahayana** (Budismo) para o payload CLP.
 
-- **Tradução**: Os versos placeholders são traduzidos para idiomas locais usando o open-google-translator.
+- **Tradução**: Os versos são traduzidos para idiomas locais usando o open-google-translator.
 
 - **Produção**: O uso em produção exige traduções curadas de termos em sânscrito e páli, provenientes de fontes publicadas, para garantir precisão e auditabilidade.
 
@@ -54,7 +54,7 @@ A arquitetura é construída em três camadas:
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Versos sagrados
-- open-google-translator — Tradução dos versos placeholders para idiomas locais (Português/Espanhol)
+- open-google-translator — Tradução dos versos para idiomas locais (Português/Espanhol)
 
 
 ## Instalação
@@ -94,7 +94,6 @@ node moksha-criptografar-pix.js
 node moksha-descriptografar-pix.js
 node moksha-assinar-pix.js
 node moksha-verso-gita-pix.js
-node moksha-verso-gita-traducao-pt.cjs
 node moksha-verificar-pix.js
 node moksha-teste-adulteracao-pix.js
 
@@ -105,7 +104,6 @@ node moksha-cifrar-clp.js
 node moksha-descifrar-clp.js
 node moksha-firmar-clp.js
 node moksha-verso-sutra-clp.js
-node moksha-verso-sutra-traduccion-es.cjs
 node moksha-verificar-clp.js
 node moksha-prueba-adulteracion-clp.js
 ```
