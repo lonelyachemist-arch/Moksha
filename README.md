@@ -46,7 +46,7 @@ that complements the mathematical proof (ML-DSA-65 signature).
 (Hinduism) for the PIX payload, and the **Tripitaka + Mahayana sutras**
 (Buddhism) for the CLP payload.
 
-- **Translation:** Placeholder verses are translated to local languages using open-google-translator.
+- **Translation:** Verses are translated to local languages using open-google-translator.
 
 - **Production:** Production use requires curated translations of
 Sanskrit and Pali terms from published sources to ensure accuracy and
@@ -57,7 +57,7 @@ auditability.
 
 - @pqc-sdk/core — ML-KEM-768 + ML-DSA-65
 - wideholy — Sacred verses
-- open-google-translator — Placeholder verse translation to local languages (PT/ES) 
+- open-google-translator — Verses translations to local languages (PT/ES) 
 
 
 ## Installation
